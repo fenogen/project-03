@@ -28,7 +28,7 @@ const AuthorizationForm = () => {
       : setEmailError('');
 
     !validatePassword(password)
-      ? setPasswordError('Пароль должен быть от 4 до 16 символов.')
+      ? setPasswordError('Пароль должен быть от 9 символов.')
       : setPasswordError('');
 
     !email && setEmailError('это обязательное поле');
@@ -46,7 +46,7 @@ const AuthorizationForm = () => {
       : setEmailError('');
 
     !validatePassword(password)
-      ? setPasswordError('Пароль должен быть от 4 до 16 символов.')
+      ? setPasswordError('Пароль должен быть от 9 символов.')
       : setPasswordError('');
 
     !email && setEmailError('это обязательное поле');
@@ -115,7 +115,7 @@ const AuthorizationForm = () => {
               value={email}
               onChange={changeEmailValue}
               placeholder="your@email.com"
-              // required
+            // required
             />
             <p className={styles.emailError}>{emailError}</p>
           </div>
@@ -132,9 +132,9 @@ const AuthorizationForm = () => {
                 value={password}
                 onChange={changePasswordValue}
                 placeholder="Пароль"
-                // minLength="4"
-                // maxLength="16"
-                // required
+              // minLength="4"
+              // maxLength="16"
+              // required
               />
               <button
                 type="button"
